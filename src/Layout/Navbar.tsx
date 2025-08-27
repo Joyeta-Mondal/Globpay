@@ -9,7 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useAppDispatch } from "@/hooks/useRedux";
 import { logout } from "@/store/Slices/AuthSlice/authSlice";
-
+import logo from "@/assets/Logo/Group 1.png";
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -26,13 +26,13 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-website-color-green shadow-lg">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-[#fff] shadow-md">
+      <div className=" mx-auto px-4 lg:py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link to="/" className="text-white text-2xl font-bold">
-              MyApp
+          <div className="w-32 h-32">
+            <Link to="/" className="text-black w-full font-bold">
+              <img src={logo} alt="" />
             </Link>
           </div>
 
@@ -40,30 +40,30 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex space-x-4">
             <Link
               to="/"
-              className="text-white hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+              className="text-black hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
             >
-              Home
+              Why Globpay
             </Link>
             <Link
               to="/about"
-              className="text-white hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+              className="text-black hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
             >
-              About
+             Features
             </Link>
             <Link
               to="/services"
-              className="text-white hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+              className="text-black hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
             >
-              Services
+              How It Works
             </Link>
             <Link
-              to="/contact"
-              className="text-white hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+              to="/howItWorks"
+              className="text-black hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
             >
-              Contact
+             Join Waitlist
             </Link>
 
-            <Popover>
+            {/* <Popover>
               <PopoverTrigger>
                 <UserAvatar userName="Mahim" />
               </PopoverTrigger>
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
                   Logout
                 </Button>
               </PopoverContent>
-            </Popover>
+            </Popover> */}
           </div>
 
           {/* Mobile Menu Button */}
