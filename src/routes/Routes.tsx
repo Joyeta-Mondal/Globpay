@@ -10,6 +10,7 @@ import Login from "@/pages/Login";
 import Signup from "@/pages/Signup";
 import Form from "@/pages/Form";
 import Services from "@/pages/Services";
+import HowItWorksProvider from "@/pages/HowItWorks";
 
 const routes = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const routes = createBrowserRouter([
       {
         path: "/signup",
         element: <Signup />,
+      },
+      {
+        path: "howItWorks",
+        element: <HowItWorksProvider />,
       },
       {
         path: "/admin",

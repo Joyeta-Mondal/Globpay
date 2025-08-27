@@ -21,12 +21,12 @@ const CommonHomeButton = ({
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-      transition={{ duration: 0.6, ease: "easeOut", delay: 0.9 }}
+      transition={{ duration: 0.6, ease: "easeOut", delay: 0.01 }}
     >
       <button
         type="submit"
         onClick={onClick}
-        className="bg-[#3d314c] hover:bg-[#4A3B5C] text-white font-semibold text-sm md:text-base md:w-fit w-full px-8 py-4 rounded-full cursor-pointer transition-all duration-300 hover:shadow-[0_0_30px_rgba(71,181,255,0.5)] hover:scale-103 flex justify-center items-center gap-2"
+        className="bg-[#3d314c] hover:bg-[#4A3B5C] text-white font-semibold text-sm md:text-base md:w-fit w-full px-8 py-4 rounded-md cursor-pointer transition-all duration-300 hover:shadow-[0_0_30px_rgba(71,181,255,0.5)] hover:scale-103 flex justify-center items-center gap-2"
       >
         {title}
         {Icon && <Icon className="w-4 h-4 text-white" />}

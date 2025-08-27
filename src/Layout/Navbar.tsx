@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
              Features
             </Link>
             <Link
-              to="/services"
+              to="/howItWorks"
               className="text-black hover:bg-website-color-lightGray hover:text-black px-3 py-2 rounded-md text-sm font-medium"
             >
               How It Works
